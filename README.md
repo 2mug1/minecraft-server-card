@@ -1,5 +1,6 @@
 # minecraft-server-card
 Minecraft Server のステータスカード(画像) を動的生成するサービスです
+Java Edition に対応しています
 
 ## HTML
 ```html
