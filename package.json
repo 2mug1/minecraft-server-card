@@ -1,7 +1,7 @@
 {
   "name": "minecraft-server-card",
   "version": "1.0.0",
-  "description": "Get the Minecraft Server Card",
+  "description": "Minecraft Server Card",
   "main": "index.js",
   "author": "takagi",
   "license": "MIT",
