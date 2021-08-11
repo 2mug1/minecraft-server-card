@@ -1,4 +1,4 @@
-import { NowRequest, NowResponse } from "@vercel/node"
+import { VercelRequest, VercelResponse } from "@vercel/node"
 import util from 'minecraft-server-util'
 import { StatusResponse } from "minecraft-server-util/src/model/StatusResponse";
 import { createCanvas, registerFont, loadImage } from 'canvas'
@@ -122,7 +122,7 @@ const makeImage = async (address: string, status: StatusResponse) => {
     return canvas.toBuffer('image/png')
 }
 
-export default async (req: NowRequest, res: NowResponse) => {
+export default async (req: VercelRequest, res: VercelResponse) => {
     res.setHeader("X-Robots-Tag", "noindex")
     const address = req.query["address"]
 
